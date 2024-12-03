@@ -11,10 +11,10 @@ export default function Home() {
           <TbSquareRoundedLetterJFilled className="text-4xl"/>
         </a>
 
-        <ul className="justify-between">
-          <li className="font-semibold ">Home</li>
-          <li className="font-semibold ">About</li>
-          <li className="font-semibold ">Contact</li>
+        <ul className="flex ">
+          <li className="font-semibold p-2">Home</li>
+          <li className="font-semibold p-2">About</li>
+          <li className="font-semibold p-2">Contact</li>
         </ul>
 
       </header>

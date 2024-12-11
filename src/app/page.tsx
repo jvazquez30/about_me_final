@@ -1,8 +1,11 @@
-'use client'
+'use client';
+
 import React from "react";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import { TbSquareRoundedLetterJFilled } from "react-icons/tb";
+import { HiOutlineArrowSmDown } from "react-icons/hi";
+
 
 
 export default function Home() {
@@ -24,18 +27,18 @@ export default function Home() {
 
 
       <main className="p-8 w-full">
-        <div className="w-full text-center">
-        <h1 className="font-extrabold text-4xl">Hello, {""}
-              <Typewriter
-                words={["Friend!", "Collegue!", "World!"]}
-                loop={6}
-                cursor
-                cursorStyle="|"
-                typeSpeed={100}
-                deleteSpeed={150}
-                delaySpeed={1000}
-              />
-            </h1>
+        <div className="w-full text-center p-80">
+          <h1 className="font-extrabold text-7xl">Hello, {""}
+            <Typewriter
+              words={["Friend!", "Colleague!", "World!"]}
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={80}
+              delaySpeed={1000}
+            />
+          </h1>
+          <h2 className="flex justify-center pt-5 text-xl"> Scroll Down to find out more about me<HiOutlineArrowSmDown className="text-2xl pt-2"/></h2>
         </div>
 
 

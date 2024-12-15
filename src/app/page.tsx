@@ -1,6 +1,7 @@
-'use client';
 import React from "react";
-
+import { GrLocationPin } from "react-icons/gr";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Technologies from "./technologies"
 
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <div className="">
       <header className="p-8 flex justify-center">
-        <ul className="flex text-center border border-neutral-500 rounded-md px-2 bg-zinc-800">
+        <ul className="flex text-center border border-neutral-500 rounded-md px-2 bg-zinc-800 text-sm">
           <li className="py-2 px-2">Home</li>
           <li className="py-2 px-2">Work</li>
           <li className="py-2 px-2">About</li>
@@ -20,29 +21,37 @@ export default function Home() {
 
       <main className="p-8 w-full">
         <div className="w-full text-center p-64 row-span-1">
-          <h1 className="text-sm font-light p-2">Based in Los Angeles</h1>
-          <h2 className="font-extrabold text-6xl">Quality {" "}
-            <span className="text-violet-400">Web Development</span>
-            {" "} 
-          </h2>
-        </div>
+          <h1 className="font-extrabold text-7xl text-indigo-400">Jose Vazquez{" "}
+          </h1>
+          <h2 className="text-xl p-1">Full Stack Developer with 1+ year experience</h2>
+          <h3 className="p-1 flex justify-center "> <GrLocationPin className="text-2xl p-1"/>Based in Los Angeles, CA</h3>
 
-
-
-
-        <div className="flex w-full p-32">
-          <div className="ml-3">
-            <p className="font-extrabold py-2 ">I&apos;m a passionate Full-Stack Developer dedicated to delivering exceptional results from Front-End to Back-End, with a strong work ethic and a love for learning the latest technologies.
-              My current stack includes JavaScript, React, HTML/CSS, Node.js, and Tailwind CSS, with expertise in quality assurance through unit and integration testing.
-              Always eager to expand my network and explore new opportunities, I welcome the chance to connect and collaborate!</p>
+          <div className="flex justify-center">
+            <button className="px-3 text-xs font-semibold border rounded-lg bg-zinc-800 border-neutral-500">
+              Download CV
+            </button>
+            <ul className="flex p-1">
+              <li> <FaGithub className="text-2xl ml-1 cursor-pointer"/> </li>
+              <li>< FaLinkedin className="text-2xl ml-1 cursor-pointer"/> </li>
+              <li></li>
+            </ul>
           </div>
-
-
-
-
-
         </div>
 
+
+
+        <section id="projects">
+          <div className="w-full p-64 text-6xl">
+            <h1>Projects</h1>
+          </div>
+        </section>
+
+        <section id="current_tech">
+          <div className="w-full p-64">
+            <h1 className="text-5xl pb-4">Current Technologies</h1>
+            <Technologies />
+          </div>
+        </section>
 
 
       </main>

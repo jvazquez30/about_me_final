@@ -48,7 +48,7 @@ export default function Home() {
 
         <section id="current_tech">
           <div className="w-full p-64">
-            <h1 className="text-5xl pb-4">Current Technologies</h1>
+            <h1 className="text-5xl pb-6">Current Technologies</h1>
             <Technologies />
           </div>
         </section>
